@@ -32,7 +32,7 @@ int main( ) {
 	LI_FN( SetConsoleTitleA )( Utils::RandomString( 25 ).c_str( ) );
 
 	std::thread One( Hack );
-	std::thread Two( Hack );
+	std::thread Two( Menu );
 
 	One.join( );
 	Two.join( );
